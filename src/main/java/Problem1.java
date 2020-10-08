@@ -22,10 +22,9 @@ public class Problem1
                 secondHalf[i] = data[half+i+1];
 
             //add half + 1 (for half itself) to the returning index
-            //BUT if -1, return -1
+            //If -1, return -1. If it isn't, then return the cumulative search index
             int temp = binarySearch(secondHalf, target);
-            if(temp == -1) return -1;
-            else return half + 1 + temp;
+            return (temp==-1) ? -1 : (half + 1 + temp);
         }
         else // target < data[half]
         {
