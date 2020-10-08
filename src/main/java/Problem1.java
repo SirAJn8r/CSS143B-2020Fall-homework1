@@ -34,6 +34,7 @@ public class Problem1
 
             return binarySearch(firstHalf, target);
         }
+
         /*
          * Note: In both the else if and else statements,
          * data[half] is not included in the next recursion as we know it is not the target
